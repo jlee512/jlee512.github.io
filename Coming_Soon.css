@@ -27,7 +27,7 @@ hr{
 }
 
 h1 {
-    font-size: 16pt;
+    font-size: 16pt !important;
     background-color: inherit;
 }
 
@@ -67,7 +67,7 @@ h1 {
 p{
     margin: auto;
     display: block;
-    font-size: 12pt;
+    font-size: 12pt !important;
 }
 
 /*Check box formatting*/
@@ -185,11 +185,11 @@ p{
     }
 
     h1 {
-        font-size: 48pt;
+        font-size: 48pt !important;
     }
 
     p {
-        font-size: 32pt;
+        font-size: 32pt !important;
     }
 
     .row.blank.large {
