@@ -23,6 +23,7 @@ hr{
 }
 
 #headerRow{
+    text-align: center;
 }
 
 #blankRow{
@@ -34,23 +35,18 @@ hr{
 }
 
 #animationRow{
-    height: 20vw;
-    min-height: 10vh;
-    max-height: 20vh;
+    height: 15vw;
+    max-height: 15vh;
     background-image: url("Photos/refillBackground.png");
     background-size: 100%;
 }
 
 #welcomeMessage{
-    height: 10vh;
+    text-align: center;
     align-items: center;
     list-style-type: none;
     background-image: url("Photos/refillBackground.png");
     background-size: 100%;
-}
-
-#projectUno{
-	text-align: center;
 }
 
 .header.col-3{
@@ -136,7 +132,7 @@ p{
 
 #fryPan {
     margin: auto;
-    width: 20vw;
+    height: 100%;
     display: block;
 
     -webkit-transform: rotateY(180deg);
@@ -182,6 +178,9 @@ p{
 /*For desktop*/
 @media only screen and (min-width: 768px) {
 
+    .row.blank {
+        padding: 2%;
+    }
 
     /*Increase font size for large screen*/
     h1 {
@@ -191,10 +190,10 @@ p{
     p {
         font-size: 2em;
     }
-	
-	#welcomeMessage{
-		
-	}
+
+    .row.blank.large {
+        height: 30%;
+    }
 }
 
 
