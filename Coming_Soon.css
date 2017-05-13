@@ -1,0 +1,202 @@
+/*Default styling for mobile*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #80ced6;
+}
+
+hr{
+    height: 5px;
+    width: 100%;
+    color: #fefbd8;
+    background: #fefbd8;
+    font-size: 0;
+    border: 0;
+}
+
+#headerRow{
+}
+
+#blankRow{
+    height: 30vw;
+    min-height: 40vh;
+    max-height: 50vh;
+    background-image: url("Photos/refillBackground.png");
+    background-size: 100%;
+}
+
+#animationRow{
+    height: 20vw;
+    min-height: 10vh;
+    max-height: 20vh;
+    background-image: url("Photos/refillBackground.png");
+    background-size: 100%;
+}
+
+#welcomeMessage{
+    height: 10vh;
+    align-items: center;
+    list-style-type: none;
+    background-image: url("Photos/refillBackground.png");
+    background-size: 100%;
+}
+
+#projectUno{
+	text-align: center;
+}
+
+.header.col-3{
+    background-color: #80ced6;
+}
+
+h1 {
+    background-color: inherit;
+}
+
+/*Text Formatting*/
+.header {
+    text-align: center;
+    color: black;
+}
+
+p{
+    margin: auto;
+    display: block;
+}
+
+/*Check box formatting*/
+#checkbox_white{
+    height: 2em;
+    width: 2em;
+    vertical-align: middle;
+    border: solid black 1px;
+    border-radius: 0.25em;
+    display: inline-block;
+    transition: background-color 2s ease;
+}
+
+#checkbox_yolk{
+    display: block;
+    width: 50%;
+    height: 50%;
+    transform: translate(50%, 50%);
+    border: solid black 1px;
+    border-radius: 0.5em;
+    background-color: yellow;
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+#checkbox_white:hover > #checkbox_yolk{
+    opacity: 1;
+}
+
+#checkbox_white:hover{
+    background-color: aliceblue;
+}
+
+#ProjectUnoText{
+}
+
+/*For mobile phonse and default styling*/
+[class*="col-"] {
+    float: left;
+}
+
+.col-1 {
+    width: 33.33%;
+}
+
+.col-2 {
+    width: 66.66%;
+}
+
+.col-3 {
+    width: 100%;
+}
+
+/*Clear the flow at the end of each row*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row.blank {
+    padding: 10%;
+}
+
+#fryPan {
+    margin: auto;
+    width: 20vw;
+    display: block;
+
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+#fryPan {
+    animation-name: fryPanshake;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+#fryPan:hover {
+    /*Add pancake flip animation once user hovers on frying pan*/
+
+}
+
+@keyframes fryPanshake {
+    0% {
+        transform: rotateY(180deg) translateX(0px);
+    }
+    20% {
+        transform: rotateY(180deg) translateX(10px);
+    }
+    40% {
+        transform: rotateY(180deg) translateX(-10px);
+    }
+    60%{
+        transform: rotateY(180deg) translateX(15px);
+    }
+    80% {
+        transform: rotateY(180deg) translateX(-10px);
+    }
+    100% {
+        transform: rotateY(180deg) translateX(0px);
+    }
+}
+
+/*For desktop*/
+@media only screen and (min-width: 768px) {
+
+
+    /*Increase font size for large screen*/
+    h1 {
+        font-size: 4em;
+    }
+
+    p {
+        font-size: 2em;
+    }
+	
+	#welcomeMessage{
+		
+	}
+}
+
+
+
+
