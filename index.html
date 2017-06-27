@@ -4,38 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Weekend Project Coming Soon</title>
+
+    <!--------------------------------Bootstrap Inclusions----------------------------------------->
+
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Latest html skins from mdbootstrap.com-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/css/mdb.min.css">
+
+    <!--Responsiveness for all screen sizes-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!--------------------------------Custom Style Inclusions----------------------------------------->
+
+    <!--Page font-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!--Custom Stylesheet-->
     <link rel="stylesheet" href="Coming_Soon.css">
+
+    <!--Custom JS-->
     <script src="Coming_Soon.js"></script>
+
+    <!--Custom favourites icon-->
+    <link rel="shortcut icon" type="image/png" href="Photos/favicon.png">
+
 </head>
 <body>
 
-<div class="row" id="headerRow">
-        <h1>Welcome to</h1>
-        <h1>My Weekend Project</h1>
-    <hr>
+div class="container-fluid">
+
+    <div class="row" id="headerRow">
+        <div class="col-xs-12 text-center page-header">
+            <h1>Welcome to</h1>
+            <h1>My Weekend Project</h1>
+        </div>
+    </div>
+
+    <div class="row" id="animationRow" style="min-height: 45vh;">
+        <div class="col-xs-1 col-md-4"></div>
+        <div class="col-xs-10 col-md-4" style="min-height: 45vh;">
+            <div class="fryPan-container">
+                <img class="fryPan img-responsive" id="frame_1_5_9_15_21" src="Photos/frypananim/0012.frame1-5-9-15-21.png" alt="WEBSITE ON THE STOVE!" />
+            </div>
+        </div>
+        <div class="col-xs-1 col-md-4"></div>
+    </div>
+
+    <div class="row" id="welcomeMessage">
+        <div class="col-xs-12 text-center">
+            <h2 id="projectUno">
+                <span id="ProjectUnoText">  Project Uno: </span>
+            </h2>
+            <h3><strong>Make the Website!</strong></h3>
+        </div>
+    </div>
+
 </div>
 
-<div class="row" id="blankRow">
-</div>
+<!----------------------------------Script Inclusions------------------------------------------>
 
+<!--Include jQuery-->
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
 
-<div class="row" id="animationRow">
-        <img id="fryPan" src="Photos/pan-37803_960_720.png" alt="WEBSITE COOKING!" />
-</div>
+<!--Bootstrap core JavaScript-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+<!--MDB core JavaScript-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/js/mdb.min.js"></script>
 
-<div class="row" id="welcomeMessage">
-    <br>
-    <br>
-    <p id="projectUno">
-        <span id="checkbox_white">
-            <span id="checkbox_yolk">&nbsp;</span>
-        </span>
-        <span id="ProjectUnoText">  Project Uno: <strong>Make the Website!</strong></span>
-    </p>
-    <br>
-    <br>
-</div>
+<!--jQuery UI-->
+<script
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
+
 </body>
 </html>
